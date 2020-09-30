@@ -45,7 +45,7 @@ const router = express.Router();
 app.use("/user", router);
 require(__dirname + "/controllers/userController")(router);
 app.get('/',function(req,res){
-  res.json("Hello World")
+  res.json("Hello World 2")
 })
 //Définition et mise en place du port d'écoute
 const port = 8800;
