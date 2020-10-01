@@ -2,10 +2,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const fs = require('fs');
-
-
-
 
 //Connexion à la base de donnée
 mongoose
@@ -49,17 +45,9 @@ const router = express.Router();
 app.use("/user", router);
 require(__dirname + "/controllers/userController")(router);
 
-app.get('/places',function(req,res){
-    fs.readFile('places.json', (err, data) => {
-    if (err) throw err;
-    let places = JSON.parse(data);
-    res.json(places)
-    });
-})
+app.use("/place", router);
+require(__dirname + "/controllers/placeController")(router);
 
-app.get('/',function(req,res){
-    res.send("hello world")
-})
 //Définition et mise en place du port d'écoute
 const port = 8800;
 app.listen(port, () => console.log(`Listening on port ${port}`));
