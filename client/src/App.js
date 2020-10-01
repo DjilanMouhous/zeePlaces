@@ -8,7 +8,7 @@ function App() {
   const [places, setPlaces] = useState(null);
   const fetchData = async () => {
     const response = await axios.get(
-      'http://localhost:8800/places'
+      'http://localhost:8800/place/listPlaces'
     );
     
     setPlaces(response.data);
@@ -22,9 +22,8 @@ function App() {
           Charger
         </button>
       {/* Display data from API */}
-      <div className="books">
- 
-        
+      <div class="container">
+        <div class="row justify-content-evenly">
         {places &&
           
           places.places.map((place, index) => {
@@ -32,7 +31,10 @@ function App() {
             <Place name={place.name} index={index}></Place>
             );
           })}
+        </div>
       </div>
+        
+        
     </div>
   );
 }
