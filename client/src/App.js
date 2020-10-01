@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import axios from 'axios';
+import logo from './logo.svg';
 import './App.css';
+import  {Place} from './Place.js';
 
 function App() {
   const [places, setPlaces] = useState(null);
   const fetchData = async () => {
     const response = await axios.get(
-      'http://localhost:8800/'
+      'http://localhost:8800/places'
     );
     
     setPlaces(response.data);
@@ -27,15 +28,8 @@ function App() {
         {places &&
           
           places.places.map((place, index) => {
-            //const cleanedDate = new Date(book.released).toDateString();
-            //const authors = book.authors.join(', ');
-
-            return (
-              <div className="book" key={index}>
-                <h3>Place {index + 1}</h3>
-                <h2>{place.name}</h2>
-
-              </div>
+            return(
+            <Place name={place.name} index={index}></Place>
             );
           })}
       </div>
