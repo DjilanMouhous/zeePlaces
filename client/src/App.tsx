@@ -6,7 +6,6 @@ import Account from './Account';
 import Home from './Home';
 import Places from './Places';
 
-
 class App extends Component {
   render() {
     return (

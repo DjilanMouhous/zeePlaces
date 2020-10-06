@@ -7,75 +7,63 @@ function ContactForm(){
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-md-5 d-flex justify-content-center flex-column">
-              <h2 className="title text-white">Get in Touch</h2>
-              <h4 className="description text-white">You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</h4>
+              <h2 className="title text-white">Contactez nous !</h2>
+              <h4 className="description text-white">Vous souhaitez nous signaler un bug ? Une réclamation ? Ou tout simplement votre satisfaction ?</h4>
               <div className="info info-horizontal">
                 <div className="icon icon-shape icon-shape-primary shadow rounded-circle text-white">
-                  <i className="ni ni-square-pin"></i>
+                  <i className="fas fa-envelope"></i>
                 </div>
                 <div className="description">
-                  <h4 className="info-title text-white">Find us at the office</h4>
-                  <p className="description ml-3 text-white"> Bld Mihail Kogalniceanu, nr. 8,<br/>
-                    7652 Bucharest,<br/>
-                    Romania
+                  <h4 className="info-title text-white">Contactez nous par téléphone</h4>
+                  <p className="description ml-3 text-white">Djilan, 06 58 84 55 23<br/>
+                    Abd, 01 23 45 67 89<br/>
                   </p>
                 </div>
               </div>
-              <div className="info info-horizontal">
-                <div className="icon icon-shape icon-shape-primary shadow rounded-circle text-white">
-                  <i className="ni ni-mobile-button"></i>
-                </div>
-                <div className="description">
-                  <h4 className="info-title text-white">Give us a ring</h4>
-                  <p className="description ml-3 text-white"> Michael Jordan<br/>
-                    +40 762 321 762<br/>
-                    Mon - Fri, 8:00-22:00
-                  </p>
-                </div>
-              </div>
+              
             </div>
             <div className="col-lg-5 col-md-7 ml-auto mr-auto">
               <div className="card card-contact card-raised">
                 <form role="form" id="contact-form" method="post">
                   <div className="card-header text-center">
-                    <h4 className="card-title">Contact Us</h4>
+                    <h4 className="card-title">Contactez nous</h4>
                   </div>
                   <div className="card-body">
                     <div className="row">
                       <div className="col-md-6">
                         <div className="form-group">
-                          <label>First name</label>
+                          <label>Prénom</label>
                           <div className="input-group mb-4">
                             <div className="input-group-prepend">
                               <span className="input-group-text"><i className="ni ni-circle-08"></i></span>
                             </div>
-                            <input className="form-control" placeholder="First Name..." aria-label="First Name..." type="text"/>
+                            <input className="form-control" placeholder="Prénom..." aria-label="Prénom..." type="text"/>
                           </div>
                         </div>
                       </div>
                       <div className="col-md-6 pl-2">
                         <div className="form-group">
-                          <label>Last name</label>
+                          <label>Nom</label>
                           <div className="input-group">
                             <div className="input-group-prepend">
                               <span className="input-group-text"><i className="ni ni-collection"></i></span>
                             </div>
-                            <input type="text" className="form-control" placeholder="Last Name..." aria-label="Last Name..."/>
+                            <input type="text" className="form-control" placeholder="Nom..." aria-label="Nom..."/>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="form-group">
-                      <label>Email address</label>
+                      <label>Adresse mail</label>
                       <div className="input-group">
                         <div className="input-group-prepend">
                           <span className="input-group-text"><i className="ni ni-email-83"></i></span>
                         </div>
-                        <input type="text" className="form-control" placeholder="Email Here..."/>
+                        <input type="text" className="form-control" placeholder="Adresse mail..."/>
                       </div>
                     </div>
                     <div className="form-group">
-                      <label>Your message</label>
+                      <label>Votre message</label>
                       <textarea name="message" className="form-control" id="message" rows={6}></textarea>
                     </div>
                     <div className="row">
@@ -83,12 +71,12 @@ function ContactForm(){
                         <div className="custom-control custom-checkbox mt-2">
                           <input className="custom-control-input" id="customCheck" type="checkbox"/>
                           <label className="custom-control-label" htmlFor="customCheck">
-                            <span>I'm not a robot</span>
+                            <span>Je ne suis pas un robot</span>
                           </label>
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <button type="submit" className="btn btn-primary pull-right">Send Message</button>
+                        <button type="submit" className="btn btn-primary pull-right">Envoyer le message</button>
                       </div>
                     </div>
                   </div>

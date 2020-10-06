@@ -5,7 +5,7 @@ import { ListFavori } from '../place/ListFavori';
 
 function Profile(){
     return(
-        <div className="container p-0 mt--9 w-100 pb-9 mw-100 ">
+        <div className="container p-0 mt--9 w-100 pb-5 mw-100 ">
             <div className="row bg-red m-0 banner w-100 mw-100 "></div>
             <div className="row w-75 profile-card pb-5 mt--5 justify-content-center bg-white rounded shadow">
                 <div className="col-md-4">
