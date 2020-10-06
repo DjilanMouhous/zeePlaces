@@ -1,8 +1,8 @@
 import React from 'react';
 
-function NavHome (){
+function NavDefault (){
   return(
-    <nav id="navbar-main" className="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light z1 headroom">
+    <nav id="navbar-main" className="navbar navbar-main navbar-expand-lg bg-dark mb-9 navbar-dark headroom zin">
     <div className="container">
       <a className="navbar-brand mr-lg-5" href="/">
         <h2 className="text-white">zeePlaces</h2>
@@ -122,4 +122,4 @@ function NavHome (){
   </nav>
     );
 }
-export {NavHome}
+export {NavDefault}

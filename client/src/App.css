@@ -23800,3 +23800,6 @@ pre>code.highlight {
   transform: scale(1.2);
   
 }
+.navbar-main{
+  z-index: 100;
+}

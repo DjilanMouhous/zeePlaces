@@ -1,0 +1,19 @@
+.avatar-profile{
+    border-radius: 50%;
+    border: 2px solid white;
+    background: url(https://blacksaildivision.com/wp-content/uploads/2015/03/centos-users-and-groups-624x390.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+
+}
+.banner{
+    height: 200px;
+}
+.profile-card{
+    margin: auto;
+}
+.list-places{
+    min-height: 300px;
+}

@@ -2,7 +2,7 @@ import React, { useState }  from 'react';
 import  {Place} from './Place';
 import axios from 'axios';
 
-function ListPlace(){
+function ListPlace(props: { limit: number; }){
     const [places, setPlaces] : any = useState(null);
     const fetchData = async () => {
       const response = await axios.get(
@@ -18,9 +18,16 @@ function ListPlace(){
             {places &&
             
             places.places.map((place: { name: any; }, index: any) => {
+              if (props.limit == 0) {
                 return(
                   <Place name={place.name} index={index}></Place>
                 );
+              } else if (index <= props.limit) {
+                return(
+                  <Place name={place.name} index={index}></Place>
+                );
+              }
+                
             })}
             </div>
         </div>

@@ -23,7 +23,7 @@ function HeaderHome (){
                     <h1 className="text-white">zeePlaces</h1>
                     <p className="lead text-white">Nos adresses préférées pour découvrir Paris</p>
                     <div className="btn-wrapper mt-5">
-                    <a href="https://www.creative-tim.com/product/argon-design-system" className="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
+                    <a href="/places/" className="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
                         <span className="btn-inner--icon"><i className="fa fa-globe-europe"></i></span>
                         <span className="btn-inner--text">Découvrez les adresses</span>
                     </a>
