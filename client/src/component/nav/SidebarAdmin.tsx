@@ -13,7 +13,7 @@ function SidebarAdmin (){
         <div className="collapse navbar-collapse" id="sidenav-collapse-main">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" href="dashboard.html">
+              <a className="nav-link active" href="/admin">
                 <i className="fas fa-tachometer-alt text-primary"></i>
                 <span className="nav-link-text">Dashboard</span>
               </a>

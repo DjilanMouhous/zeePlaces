@@ -23817,3 +23817,7 @@ pre>code.highlight {
 		transform: translatey(0px);
 	}
 }
+
+.profile_picture{
+  width: 300px;
+}

@@ -1,20 +1,16 @@
 import React from 'react';
 
-function AddPlace (){
+function AddPlaceForm (){
   return(
     
-    <div className="container">
+    <div className="container pt-9">
         <div className="row">
-            <h1>Hi</h1>
             <div className="col-md-4">
-                <img src="https://demos.creative-tim.com/argon-design-system/assets/img/brand/white.png" alt=""/>
+                <img className="profile_picture" src="https://blacksaildivision.com/wp-content/uploads/2015/03/centos-users-and-groups-624x390.jpg" alt=""/>
                 <div>
-                    <span className="btn btn-raised btn-round btn-primary btn-file btn-sm mx-auto mt-3">
-                      <span className="fileinput-new">Add Photo</span>
-                      <span className="fileinput-exists">Change</span>
-                      <input type="file" name="..."/></span>
+                    <span>
+                      <input  className="btn btn-raised btn-round btn-primary btn-file btn-sm mx-auto mt-3"  type="file" name="..."/></span>
                     <br/>
-                    <a href="#pablo" className="btn btn-danger btn-round fileinput-exists btn-simple btn-sm" data-dismiss="fileinput"><i className="tim-icons icon-simple-remove"></i> Remove</a>
                   </div>
             </div>
             <div className="col-md-8">
@@ -51,23 +47,30 @@ function AddPlace (){
                         <textarea className="form-control form-control-alternative" id="desc" name="desc" rows={3} placeholder="Entrez la description"></textarea>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row mt-3">
                     <div className="col-md-3 align-self-center">
-                        <label className="labels" htmlFor="#category">Catégorie</label>
+                        <label className="labels" htmlFor="#budget">Budget</label>
                     </div>
                     <div className="col-md-9 align-self-center">
                         <div className="form-group">
-                          <select id="category" name="category" className="form-control" placeholder="Catégorie de l'activité" required>
-                              <option value="restaurants">Restaurants</option>
-                              <option value="restaurants">Restaurants</option>
-                              <option value="restaurants">Restaurants</option>
+                          <select id="budget" name="budget" className="form-control" placeholder="Budget de l'activité" required>
+                                <option value="restaurants">Gratuit</option>
+                                <option value="restaurants">Economique</option>
+                                <option value="restaurants">Moderé</option>
+                                <option value="restaurants">Cher</option>
                             </select>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div className="row">
+            <div className="col-md-12">
+            <input  className="btn btn-raised btn-round btn-primary btn-file btn-sm mx-auto mt-3"  type="submit" name="submit"/>
+
+            </div>
+        </div>
     </div>
     );
 }
-export {AddPlace}
+export {AddPlaceForm}
