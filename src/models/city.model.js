@@ -1,5 +1,5 @@
 module.exports = (sequelize, Sequelize) => {
-    const City = sequelize.define("place", {
+    const City = sequelize.define("city", {
         label: {
             type: Sequelize.STRING,
             allowNull: false,
